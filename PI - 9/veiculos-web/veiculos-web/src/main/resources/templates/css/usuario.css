@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+.libre-baskerville-regular {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.libre-baskerville-bold {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.libre-baskerville-regular-italic {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* ========== CORES =========== */
+:root{
+  --cor-primaria: #f4bbac;
+  --cor-dois: #dd9987;
+  --cor-tres: #d99a95;
+  --cor-quatro: #d4807b;
+  --cor-cinco: #b45e5f;
+  --cor-seis: #cf766b;
+  --cor-sete: #e7dcdd;
+}
+
+/* ======== GERAL ======== */
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: var(--cor-primaria);
+}
+
+/* ======== CABEÇALHO ======== */
+#cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--cor-dois);
+    padding: 10px 40px;
+}
+
+#cabecalho i {
+    font-size: 30px;
+    color: var(--cor-cinco);
+}
+
+.content-links a {
+    color: var(--cor-cinco);
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 16px;
+}
+
+.content-links a:hover {
+    text-decoration: underline;
+}
+
+/* ======== CONTEÚDO ======== */
+#content {
+    text-align: center;
+    margin-top: 30px;
+}
+
+h1 {
+    font-size: 28px;
+    color: var(--cor-cinco);
+    margin-bottom: 20px;
+}
+
+/* ======== TABELA ======== */
+#square-table {
+    width: 80%;
+    margin: 0 auto 60px auto;
+    background-color: var(--cor-sete);
+    border-collapse: collapse;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+}
+
+#square-table th,
+#square-table td {
+    border: 1px solid var(--cor-tres);
+    padding: 12px;
+    text-align: center;
+    color: var(--cor-seis);
+}
+
+#square-table th {
+    font-weight: bold;
+}
+
+/* ======== ÁREA DE CADASTRO ======== */
+.square-cadastro {
+    background-color: var(--cor-sete);
+    width: 70%;
+    margin: 0 auto 50px auto;
+    border-radius: 10px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.square-cadastro label {
+    align-self: flex-start;
+    margin: 8px 0 4px 17%;
+    color: var(--cor-quatro);
+    font-size: 15px;
+}
+
+.square-cadastro input,
+.square-cadastro select {
+    width: 65%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: var(--cor-tres);
+    color: var(--cor-cinco);
+    font-size: 14px;
+    outline: none;
+}
+
+.square-cadastro input:focus,
+.square-cadastro select:focus {
+    background-color: var(--cor-tres);
+}
+
+/* ======== BOTÃO CADASTRAR ======== */
+.square-cadastro button {
+    margin-top: 15px;
+    background-color: var(--cor-seis);
+    color: var(--cor-primaria);
+    border: none;
+    border-radius: 20px;
+    padding: 10px 40px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: background-color 0.3s;
+}
+
+.square-cadastro button:hover {
+    background-color: var(--cor-cinco);
+}
+
+.square-cadastro button a {
+    text-decoration: none;
+    color: white;
+}

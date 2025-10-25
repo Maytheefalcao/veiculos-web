@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+.libre-baskerville-regular {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.libre-baskerville-bold {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.libre-baskerville-regular-italic {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* ========== CORES =========== */
+:root{
+  --cor-primaria: #f4bbac;
+  --cor-dois: #dd9987;
+  --cor-tres: #d99a95;
+  --cor-quatro: #d4807b;
+  --cor-cinco: #b45e5f;
+  --cor-seis: #cf766b;
+  --cor-sete: #e3cbcc;
+}
+
+/* ======== ESTILOS GERAIS ======== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background-color: var(--cor-primaria);
+    color: var(--cor-sete);
+}
+
+/* ======== CABEÇALHO ======== */
+#cabecalho {
+    background-color: var(--cor-dois);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+}
+
+#cabecalho i {
+    font-size: 35px;
+    color: var(--cor-cinco);
+}
+
+.content-links {
+    display: flex;
+    gap: 30px;
+}
+
+.content-links a {
+    text-decoration: none;
+    color: var(--cor-cinco);
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.content-links a:hover {
+    color: #000;
+}
+
+/* ======== CONTEÚDO PRINCIPAL ======== */
+#content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+}
+
+.content-square {
+    background-color: var(--cor-seis);
+    width: 1200px;
+    height: 70%;
+    border-radius: 20px;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.dados {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+/* ======== IMAGEM ======== */
+.banner {
+    display: flex;
+    height: 700px;
+    margin-bottom: 7.2%;
+    left: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+    position: absolute;
+}
+
+/* ======== TEXTO ======== */
+.title {
+    font-size: 2rem;
+    font-weight: 500;
+    color: rgb(255, 228, 217);
+}
+
+.description {
+    color: rgb(255, 228, 217);
+    font-size: 1.2rem;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+/* ======== CAMPOS DE ENTRADA ======== */
+.content-dados {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin-left: 8%;
+    gap: 10px;
+}
+
+.content-dados label {
+    font-weight: 500;
+    color: rgb(255, 228, 217);
+    margin-top: 10px;
+}
+
+.content-dados input {
+    border: none;
+    background-color: var(--cor-sete);
+    padding: 10px;
+    border-radius: 20px;
+    width: 250px;
+    outline: none;
+}
+
+/* ======== BOTÃO ======== */
+.content-dados button {
+    width: 200px;
+    margin-top: 20px;
+    margin-left: 20px;
+    border: none;
+    background-color: var(--cor-cinco);
+    border-radius: 20px;
+    padding: 10px 30px;
+    align-self: flex-start;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.content-dados button:hover {
+    background-color: #803b3b;
+}
+
+.content-dados button a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+/* ======== RESPONSIVIDADE ======== */
+@media (max-width: 768px) {
+    .dados {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .banner {
+        width: 200px;
+        height: 220px;
+    }
+
+    .content-dados {
+        align-items: center;
+    }
+}

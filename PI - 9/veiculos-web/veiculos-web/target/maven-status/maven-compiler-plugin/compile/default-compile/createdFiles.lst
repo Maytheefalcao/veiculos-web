@@ -1,0 +1,11 @@
+br\com\autocenter\veiculos_web\Veiculo.class
+br\com\autocenter\veiculos_web\VeiculoService.class
+br\com\autocenter\veiculos_web\Usuario.class
+br\com\autocenter\veiculos_web\VeiculoServiceImpl.class
+br\com\autocenter\veiculos_web\UsuarioRepository.class
+br\com\autocenter\veiculos_web\UsuarioService.class
+br\com\autocenter\veiculos_web\VeiculosWebApplication.class
+br\com\autocenter\veiculos_web\UsuarioController.class
+br\com\autocenter\veiculos_web\UsuarioServiceImpl.class
+br\com\autocenter\veiculos_web\VeiculoController.class
+br\com\autocenter\veiculos_web\VeiculoRepository.class

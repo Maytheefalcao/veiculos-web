@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Veículos</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/veiculos.css">
+</head>
+<body>
+    <header id="cabecalho">
+        <i class="bi bi-person-circle"></i>
+
+        <div class="content-links">
+            <a href="Inicio.html" class="link-1">Início</a>
+            <a href="Veiculos.html" class="link-1">Veículos</a>
+            <a href="Usuarios.html" class="link-1">Usuários</a>        
+        </div>
+    </header>
+
+    <div id="content">
+        <h1>Gerenciar Veículos</h1>
+
+        <div class="pesquisa">
+            <label for="select">Filtrar por</label>
+            <select name="categoria" id="categoria">
+                <option value="todos">Todos</option>
+                <option value="status">Status</option>
+            </select>
+
+            <label for="pesquisa">Pesquisar</label>
+            <input type="search" placeholder="Pesquisar Veículo">
+        </div>
+
+        <div class="square-gerenciar">
+            <table id="table-car">
+                <tr>
+                    <th>ID</th>
+                    <th>Marca</th>
+                    <th>Modelo</th>
+                    <th>Ano</th>
+                    <th>Preço</th>
+                    <th>Status</th>
+                </tr>
+            </table>
+        </div>
+
+        <h1>Cadastrar Veículos</h1>
+        <div class="square-cadastro">
+            <label for="Marca">Marca</label>
+            <input type="text">
+            <label for="Modelo">Modelo</label>
+            <input type="text">
+            <label for="Ano">Ano</label>
+            <input type="date">
+            <label for="Preço">Preço</label>
+            <input type="text" placeholder="R$">
+            <label for="Status">Status</label>
+            <input type="text">
+            <button><a href="#">Cadastrar</a></button>
+        </div>
+
+    </div>
+</body>
+</html>
