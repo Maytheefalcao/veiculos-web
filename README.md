@@ -21,5 +21,5 @@ Possui **CRUD completo**, **persistência via Spring Data JPA (banco H2)** e **e
 - **Java 17+**
 - **Spring Boot 3.5.6**
 - **Spring Data JPA**
-- **H2 Database**
+- **MySQL Database**
 - **Maven**
